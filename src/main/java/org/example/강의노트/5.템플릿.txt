@@ -1,0 +1,14 @@
+
+[ Spring 정적 파일 ]
+    - Spring 프로젝트 내 HTML/CSS/JS/IMG 등등 파일은 src -> main -> resources -> static 폴더 내
+        --> 만약에 다른 폴더 내 html/css/js/img 등 식별 불가능
+    1. Spring 프로젝트는 정해진 폴더(static)내 HTMl 경로 지원한다.
+        http://localhost:8080/(static)이하 경로의 html
+        예) http://localhost:8080/example/example1.html
+    2. 지원확장자 : .html / .js / .css / .jpg 등등, 주로 정적파일이다.
+
+[ Spring 동적 파일 ]
+    -> Spring 프로젝트 내 JSP( JAVA+HTML : MVC1패턴 )/ *타임리프( JAVA+HTML )* /머스테치/REACT( JS+HTML : MVC2 ) 등등 파일
+    -> 정적파일은 코드 그 자체로 브라우저 해석(렌더링)
+                    vs
+       동적파일은 코드 그 자체로 브라우저 해석(렌더링) 불가능, 각 프로그래밍 언어들이 렌더링
