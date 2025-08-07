@@ -23,6 +23,9 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:11.0.7' // JSP 라이브러리 설치
+    // 롬복 라이브러리 설치
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
 }
 
 tasks.named('test') {
