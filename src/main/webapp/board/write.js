@@ -1,6 +1,7 @@
 console.log("write.js open");
 
-window.write = async () => {
+const _write = async () => {
+    alert("write 함수 실행됨!");
     const phoneInput = document.querySelector(".phone");
     const countInput = document.querySelector(".count");
 
@@ -23,8 +24,7 @@ window.write = async () => {
 
     if (data == true) {
         alert("등록 성공");
-        location.href = "/board/find.jsp";
-    } else {
+        location.href="/board/find.jsp";
         alert("등록 실패");
     }
 };

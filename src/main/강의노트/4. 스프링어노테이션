@@ -31,9 +31,15 @@
     - @XXXMapping( "URL정의" ) : Mapping 어노테이션( 소괄호 안에서 정의할 웹주소(URL)을 baseURL(http://localhost:8080) 뒤로 사용할 주소 정의
     - @GETMapping( "/member" ) : "http://localhost:8080/member"
 8. @ResponseBody : HTTP(웹) 통신의 요청 처리 이후 응답 반환시 *JAVA 타입에서 주로 JSON 타입으로 변환*
-9. @RequestParam : 쿼리스트링, GET/DELETE, 단일 매개변수, int/String/List/Map
-   @ModelAttribute : 쿼리스트링, GET/DELETE, 복수 매개변수, DTO/VO
-   @RequestBody : HTTP 본문, POST/PUT, 본문 객체(JSON), DTO/Map/List
+9. @RequestMapping : HTTP(웹) 통신의 주로 class 요청 매핑, 즉 class 매핑하면 공통 URL 정의할 때 사용
+    - @RequestNapping("/member")
+        class Controller{
+        @@GetMapping("/find") <---------- "/member/find"
+        }
+
+10. @RequestParam : 쿼리스트링, GET/DELETE, 단일 매개변수, int/String/List/Map
+11. @ModelAttribute : 쿼리스트링, GET/DELETE, 복수 매개변수, DTO/VO
+12. @RequestBody : HTTP 본문, POST/PUT, 본문 객체(JSON), DTO/Map/List
 
 [ HTTP 자료 표함 ]
     방법1. 쿼리스트링  ?URL 경로상의 매개변수 표현, get/psot/put/delete method 표현, 매개변수 노출o

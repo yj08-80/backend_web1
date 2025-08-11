@@ -14,7 +14,7 @@
         <div>
             전화번호 : <input type="text" class="phone"/><br>
             인원수 : <input type="number" class="count"/><br>
-            <button type="button" onclick="write()">등록</button>
+            <button type="button" onclick="_write()">등록</button>
         </div>
 
 
