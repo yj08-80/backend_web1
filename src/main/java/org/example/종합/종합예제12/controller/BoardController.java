@@ -6,12 +6,12 @@ import org.example.종합.종합예제12.service.BoardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
 @RequestMapping("/board")
 public class BoardController { // class start
+
     @Autowired
     private BoardService boardService;
 
