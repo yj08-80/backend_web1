@@ -105,7 +105,11 @@ public class ProductDao extends Dao { // class start
             }
         } catch (Exception e) {   System.out.println(e); }
         return null;
-    }
+    } // func end
+
+
+    // [3] 전체조회 검색
+
 
 
 } // class end
