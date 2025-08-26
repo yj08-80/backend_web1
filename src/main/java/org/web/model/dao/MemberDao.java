@@ -7,7 +7,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Map;
-import java.util.PrimitiveIterator;
 
 
 @Repository // 스프링 컨테이너에 빈 등록

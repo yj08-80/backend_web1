@@ -6,14 +6,14 @@ import java.sql.DriverManager;
 public class Dao { // class start
 
     // [ DB연동 부가정보 ]
-    private String db_url = "jdbc:mysql://localhost:3306/test5";
+    private String db_url = "jdbc:mysql://localhost:3306/assessment";
     private String db_user = "root";
     private String db_password = "1234";
 
     // [ DB연동 멤버변수 ]
     public Connection conn;
 
-    // [ DB연동 생성자 ] * 싱글톤이 아니다
+    // [ DB연동 생성자 ]
     public Dao(){
         connect();
     }
